@@ -17,12 +17,12 @@ video: Chapter 2 - Part 3
  1) Write down the names of the 6 major primitive types available in C++  here:
  
  
- 
- 
- 
- 
- 
- 
+ int
+ float
+ double
+ bool
+ char
+ unsigned int
  
  
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration() function on line 59.
@@ -64,10 +64,16 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
-    
+    int speed = 30, volume = 10, height = 3;
+    float length = 1.52f, width = 2.33f, depth = 1.14f;
+    double pi = 3.14, constant = 5.5, voltage = 2.2;
+    bool jobFinished = 1, isColorWhite = 1, isShapeSquare = 0;
+    char mathGrade = 70, physicGrade = 80, chemistryGrade = 70; 
+    unsigned int amount = 10, month = 4, date = 5;
+
 
     
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number,speed,volume,height,length,width,depth,pi,constant,voltage,jobFinished,isColorWhite,isShapeSquare,mathGrade,physicGrade,chemistryGrade, amount,month,date); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -84,42 +90,92 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
+double power(double voltage = 2.0, double current = 1.1)
+{
+    ignoreUnused(voltage, current);
+    return {};
+}
 
 /*
  2)
  */
+char studentName(int idNumber, int seatNumber = 6)
+{
+    ignoreUnused(idNumber, seatNumber);
+    return {};
+}
 
 /*
  3)
  */
+ bool connectSpeaker(int outputChannel, int inputChannel = 2)
+{
+    ignoreUnused(outputChannel, inputChannel);
+    return {};
+}
 
 /*
  4)
  */
+float totalVolume(float length, float width, float height = 1.5)
+{
+    ignoreUnused(length, width, height);
+    return {};
+}
 
 /*
  5)
  */
+bool selectACourse(int courseNumber, bool prerequisiteTaken = 1)
+{
+    ignoreUnused(courseNumber, prerequisiteTaken );
+    return {};
+}
 
 /*
  6)
  */
+double totalIncome(double extraIncome, double monthlyIncome = 6312.23)
+{
+    ignoreUnused(extraIncome, monthlyIncome );
+    return {};
+}
 
 /*
  7)
  */
+bool creatAAcount(bool emailConfirmation, bool setPassword = 1)
+{
+    ignoreUnused(emailConfirmation, setPassword);
+    return {};  
+}
 
 /*
  8)
  */
+char grade(float homeworkScore, float midtermScore, float finalScore = 89.5)
+{
+    ignoreUnused(homeworkScore,midtermScore,finalScore);
+    return {};  
+}
 
 /*
  9)
  */
+bool doubleDoubleState(int point, int rebound = 5, int assist = 12)
+{
+    ignoreUnused(point, rebound, assist);
+    return {};    
+}
 
 /*
  10)
  */
+double winRate(int win, int loss = 10)
+{
+    ignoreUnused(win,loss);
+    return {};    
+}
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
@@ -141,27 +197,27 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto powerValue = power(3.0,1.5);
     //2)
-    
+    auto name = studentName(9567);
     //3)
-    
+    auto speakerConnected = connectSpeaker(2,2);
     //4)
-    
+    auto volume = totalVolume(3.7f,5.5f);
     //5)
-    
+    auto courseSelected = selectACourse(335);
     //6)
-    
+    auto income = totalIncome(3233.56);
     //7)
-    
+    auto acountCreated = creatAAcount(1,1);
     //8)
-    
+    auto calculusGrade = grade(10, 75.2f);
     //9)
-    
+    auto doubleDouble = doubleDoubleState(35);
     //10)
+    auto winRatePercentage = winRate(25,15);
     
-    
-    ignoreUnused(carRented);
+    ignoreUnused(carRented,powerValue,name,speakerConnected,volume,courseSelected,income,acountCreated,calculusGrade,doubleDouble,winRatePercentage);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }

@@ -155,7 +155,7 @@ bool creatAAcount(bool emailConfirmation, bool setPassword = 1)
  */
 char grade(float homeworkScore, float midtermScore, float finalScore = 89.5)
 {
-    ignoreUnused(homeworkScore,midtermScore,finalScore); FIXME: formatting
+    ignoreUnused(homeworkScore, midtermScore, finalScore); 
     return {};  
 }
 
@@ -173,7 +173,7 @@ bool doubleDoubleState(int point, int rebound = 5, int assist = 12)
  */
 double winRate(int win, int loss = 10)
 {
-    ignoreUnused(win,loss); FIXME: formatting
+    ignoreUnused(win, loss); 
     return {};    
 }
 
@@ -217,8 +217,7 @@ int main()
     //10)
     auto winRatePercentage = winRate(25, 15);
 
-    FIXME: formatting: ',name ,'
-    ignoreUnused(carRented, powerValue ,name , speakerConnected, volume, courseSelected, income, acountCreated, calculusGrade, doubleDouble, winRatePercentage);
+    ignoreUnused(carRented, powerValue, name , speakerConnected, volume, courseSelected, income, acountCreated, calculusGrade, doubleDouble, winRatePercentage);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }

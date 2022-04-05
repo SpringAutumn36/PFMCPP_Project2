@@ -73,7 +73,7 @@ void variableDeclarations()
 
 
     
-    ignoreUnused(number,speed,volume,height,length,width,depth,pi,constant,voltage,jobFinished,isColorWhite,isShapeSquare,mathGrade,physicGrade,chemistryGrade, amount,month,date); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, speed, volume, height, length, width, depth, pi, constant, voltage, jobFinished, isColorWhite, isShapeSquare, mathGrade, physicGrade, chemistryGrade, amount, month, date); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -217,7 +217,7 @@ int main()
     //10)
     auto winRatePercentage = winRate(25,15);
     
-    ignoreUnused(carRented,powerValue,name,speakerConnected,volume,courseSelected,income,acountCreated,calculusGrade,doubleDouble,winRatePercentage);
+    ignoreUnused(carRented, powerValue ,name , speakerConnected, volume, courseSelected, income, acountCreated, calculusGrade, doubleDouble, winRatePercentage);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }

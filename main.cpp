@@ -197,25 +197,25 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    auto powerValue = power(3.0,1.5);
+    auto powerValue = power(3.0, 1.5);
     //2)
     auto name = studentName(9567);
     //3)
-    auto speakerConnected = connectSpeaker(2,2);
+    auto speakerConnected = connectSpeaker(2, 2);
     //4)
-    auto volume = totalVolume(3.7f,5.5f);
+    auto volume = totalVolume(3.7f, 5.5f);
     //5)
     auto courseSelected = selectACourse(335);
     //6)
     auto income = totalIncome(3233.56);
     //7)
-    auto acountCreated = creatAAcount(1,1);
+    auto acountCreated = creatAAcount(1, 1);
     //8)
     auto calculusGrade = grade(10, 75.2f);
     //9)
     auto doubleDouble = doubleDoubleState(35);
     //10)
-    auto winRatePercentage = winRate(25,15);
+    auto winRatePercentage = winRate(25, 15);
     
     ignoreUnused(carRented, powerValue ,name , speakerConnected, volume, courseSelected, income, acountCreated, calculusGrade, doubleDouble, winRatePercentage);
     std::cout << "good to go!" << std::endl;
